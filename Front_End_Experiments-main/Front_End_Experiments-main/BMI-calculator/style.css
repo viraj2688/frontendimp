@@ -1,0 +1,127 @@
+*{
+
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    min-height: 100vh;
+    background: url(bg.png);
+    background-size: cover;
+    font-family: Arial;
+}
+
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box{
+    min-width: 400px;
+    background-color: #fafafa;
+    border: 2px solid black;
+    border-radius: 38px;
+    text-align: center;
+    position: relative;
+}
+
+.box::before{
+    /* content: ''; */
+    position: absolute;
+    height: 110%;
+    width: 110%;
+    left: -5%;
+    top: -5%;
+     /* background-color: rgba(255,255,255,0.3);  */
+}
+
+h1{
+    font-weight: bold;
+    font-size: 36px;
+    padding: 30px 0;
+
+}
+
+.content{
+    padding: 0 40px;
+
+}
+
+.input{
+    background: #FFF;
+    box-shadow: 0px 0px 95px rgba(0,0,0,0.15);
+    border-radius: 28px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    
+}
+
+.input label{
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.input input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #4f7df9;
+    width: 60%;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+button#calculate{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #FFF;
+    background: #4f7df9;
+    font-size: 20px;
+    border-radius: 12px;
+    padding: 12px 0;
+    width: 100%;
+    outline: none;
+    border: none;
+    transition: .2s ease;
+}
+
+button#calculate:hover{
+    background: #0044ff;
+}
+
+.result{
+    padding: 30px 20px;
+
+}
+
+.result p{
+    font-weight: 600;
+    font-size: 22px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.result #result{
+    font-size: 36px;
+    font-weight: 900;
+    color: #4f7df9;
+    background-color: #eaeaea;
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 55px;
+    margin-bottom: 25px;
+
+}
+
+#comment{
+    color: #4f7df9;
+    font-weight: 800;
+
+}
